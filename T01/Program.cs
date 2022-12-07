@@ -24,5 +24,7 @@ string[] array = new string[massif];
 InputArray(array);
 Console.WriteLine();
 Console.WriteLine($"Введённый первоначальный массив: [{string.Join(", ", array)}]");
-Console.Write("Полученный массив: ");
+Console.ForegroundColor = ConsoleColor.DarkCyan;
+Console.WriteLine("Полученный массив: ");
 NewArray(array);
+Console.ResetColor();
